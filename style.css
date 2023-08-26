@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    font-family: VT323;
+}
+
 #screen {
     position: relative;
     overflow: hidden;
@@ -23,6 +28,7 @@
     pointer-events: none;
 }
 
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -33,6 +39,14 @@
 
 }
 
+.input-container{
+    flex-direction: column;
+}
+.input{
+    background-color: rgb(10, 83, 10);
+}
+
+
 #conteudo {
     font-family: VT323;
     padding: 80px;
@@ -42,9 +56,35 @@
         0 0 1cm rgb(150, 167, 124), 0 0 0.2cm rgb(150, 167, 124);
 }
 
+#terminal {
+    position: relative;
+}
+
+#return {
+    height: 200px;
+    width: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#return::-webkit-scrollbar{
+    width: 10px;
+    color: rgb(10, 83, 10);
+}
+
+.helpWarning{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
 .ascii{
     color: white;
     display:inline-block;
+    position: absolute;
+    top: 5%;
+    right: 0;
     white-space:pre;
     letter-spacing:0;
     line-height:1.4;
