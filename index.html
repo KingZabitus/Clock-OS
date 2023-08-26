@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts-gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>MP Os</title>
+    <title>Clock Os</title>
 </head>
 
 <body>
@@ -16,8 +16,17 @@
         <img src="img/scanlines.png" id="scan">
         <img src="img/bezel.png" id="bezel">
         <div id="conteudo" class="noselect">
-            <h1>Clock OS</h1>
-            <p style="float:left; font-size: 23px;">Type "help" for a list of commands<br> >_</p>
+            <h1 id="currentTime"></h1>
+            <h1 class="title">Clock OS</h1>
+            <div id="terminal">
+
+                
+                <div class="input-container">
+                    <p class="helpWarning">Digite "ajuda" para ver uma lista de comandos<br></p>
+                    <div id="return"></div>
+                    <input type="text" id="input" class="input" placeholder=">_">
+                </div>
+            </div>
             <span class="ascii">
             <span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>,</span><span>,</span><span>,</span><span>,</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span>
             <span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>,</span><span>,</span><span>,</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span>
@@ -53,6 +62,7 @@
             <span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span>.</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span> </span><span> </span><span> </span><span> </span><span> </span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>,</span><span>.</span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span><span> </span>
             </span>
     </div>
+    <script src="mainScript.js"></script>
 </body>
 
 </html>
