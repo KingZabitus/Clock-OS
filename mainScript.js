@@ -45,7 +45,7 @@ function horaAtual() {
 function help(){
   // Criando um elemento <p> e adicionando o texto de resposta como conteúdo desse elemento
   const helpResposta = document.createElement("p");
-  helpResposta.innerHTML = "> Lista de comandos disponíveis: <br>> ajuda - exibe esta lista de comandos <br>> hora - exibe a hora atual <br>> cadastrarFoto - Cadastra sua foto";
+  helpResposta.innerHTML = "> Lista de comandos disponíveis: <br>> ajuda - exibe esta lista de comandos <br>> hora - exibe a hora atual <br>> cadastrarFoto - Cadastra sua foto <br>>limpar - limpa o texto do terminal";
 
   // Inserindo o elemento na div de respostas acima do input
   returnDiv.appendChild(helpResposta);
